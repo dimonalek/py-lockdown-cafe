@@ -1,4 +1,5 @@
 import datetime
+
 import app.errors as errors_pkg
 
 
@@ -17,5 +18,4 @@ class Cafe:
             raise errors_pkg.NotWearingMaskError(
                 "Visitor is not wearing a mask"
             )
-        else:
-            return f"Welcome to {self.name}"
+        return f"Welcome to {self.name}"
